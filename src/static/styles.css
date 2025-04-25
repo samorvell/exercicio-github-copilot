@@ -92,6 +92,8 @@ section h3 {
 }
 
 .activity-card ul li {
+  display: flex;
+  align-items: center;
   margin-bottom: 8px;
   padding: 10px;
   background-color: #e8eaf6; /* Azul claro consistente com o tema */
@@ -99,7 +101,6 @@ section h3 {
   border-radius: 5px;
   color: #1a237e; /* Azul escuro para o texto */
   font-weight: bold;
-  text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, background-color 0.2s;
 }
@@ -107,6 +108,13 @@ section h3 {
 .activity-card ul li:hover {
   transform: translateY(-3px);
   background-color: #c5cae9; /* Azul intermediário ao passar o mouse */
+}
+
+.activity-card ul li::before {
+  content: "👤"; /* Ícone de participante */
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #3949ab; /* Azul escuro */
 }
 
 button {
